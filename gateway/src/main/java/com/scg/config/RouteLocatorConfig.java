@@ -18,11 +18,11 @@ public class RouteLocatorConfig {
                 .routes()
                     .route(routeSpec -> routeSpec
                         .path("/order/**")
-                        .uri("http://localhost:8001")
+                        .uri("http://localhost:8081")
                     )
                     .route(routeSpec -> routeSpec
-                        .path("/detail/**")
-                        .uri("http://localhost:8002")
+                        .path("/delivery/**")
+                        .uri("http://localhost:8082")
                     )
                     .route(routeSpec -> routeSpec
                             .path("/search/**")
